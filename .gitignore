@@ -1,0 +1,10 @@
+coc/
+configstore/
+dot-files/
+filezilla/
+gcloud/
+iterm2/
+ranger/
+wireshark/
+yarn/
+init.vim

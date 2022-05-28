@@ -1,0 +1,7 @@
+require "user.options"
+require "user.plugins"
+require "user.colorscheme"
+require "user.cmp"
+require "user.keybinds"
+require "user.lsp"
+require "user.nvim-tree"
