@@ -74,6 +74,13 @@ return packer.startup(function()
   use {
   'lewis6991/gitsigns.nvim',
   -- tag = 'release' -- To use the latest release
-}
+  }
+  
+  -- bufferline
+  use {
+    'akinsho/bufferline.nvim', 
+    tag = "v2.*",
+    requires = 'kyazdani42/nvim-web-devicons'}
+
 
 end)

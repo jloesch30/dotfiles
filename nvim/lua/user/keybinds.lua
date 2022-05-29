@@ -71,3 +71,4 @@ keymap("n", "<C-n>", ":NvimTreeToggle<CR>", opts)
 -- telescope
 keymap("n", "<C-p>", ":Telescope find_files<CR>", opts)
 keymap("n", "<leader>r", ":Telescope live_grep<CR>", opts)
+keymap("n", "<leader>h", ":Telescope oldfiles<CR>", opts)       -- finds old files
