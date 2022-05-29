@@ -26,6 +26,7 @@ return packer.startup(function()
   use "nvim-lua/plenary.nvim"
   use "kyazdani42/nvim-tree.lua"
   use "kyazdani42/nvim-web-devicons"
+  use "antoinemadec/FixCursorHold.nvim"
   use { "wbthomason/packer.nvim" }
   use { "ellisonleao/gruvbox.nvim" }
   use {
@@ -53,8 +54,26 @@ return packer.startup(function()
     "hrsh7th/vim-vsnip"
 
   }
-  -- git
-  use "lewis6991/gitsigns.nvim"
+
   -- colorschemes
   use "lunarvim/colorschemes"
+
+  -- treesitter
+  use {
+  'nvim-telescope/telescope.nvim',
+  requires = { {'nvim-lua/plenary.nvim'} }
+  }
+
+  -- lualine
+  use {
+  'nvim-lualine/lualine.nvim',
+  requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
+
+  -- gitsigns
+  use {
+  'lewis6991/gitsigns.nvim',
+  -- tag = 'release' -- To use the latest release
+}
+
 end)

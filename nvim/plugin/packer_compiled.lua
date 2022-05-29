@@ -69,6 +69,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["FixCursorHold.nvim"] = {
+    loaded = true,
+    path = "/Users/joshloesch/.local/share/nvim/site/pack/packer/start/FixCursorHold.nvim",
+    url = "https://github.com/antoinemadec/FixCursorHold.nvim"
+  },
   LuaSnip = {
     loaded = true,
     path = "/Users/joshloesch/.local/share/nvim/site/pack/packer/start/LuaSnip",
@@ -113,6 +118,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/joshloesch/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
     url = "https://github.com/ellisonleao/gruvbox.nvim"
+  },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/Users/joshloesch/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   ["nlsp-settings.nvim"] = {
     loaded = true,
@@ -163,6 +173,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/joshloesch/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["telescope.nvim"] = {
+    loaded = true,
+    path = "/Users/joshloesch/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["vim-vsnip"] = {
     loaded = true,

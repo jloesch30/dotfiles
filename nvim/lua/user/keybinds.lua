@@ -13,7 +13,7 @@ vim.api.nvim_set_keymap('n', '[d', '<cmd>lua vim.diagnostic.goto_prev()<CR>', op
 vim.api.nvim_set_keymap('n', ']d', '<cmd>lua vim.diagnostic.goto_next()<CR>', opts)
 vim.api.nvim_set_keymap('n', '<space>q', '<cmd>lua vim.diagnostic.setloclist()<CR>', opts)
 
-local on_attach = function(client, bufnr)
+local kn_attach = function(client, bufnr)
   -- Enable completion triggered by <c-x><c-o>
   vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
 
@@ -60,10 +60,14 @@ keymap("v", "p", '"_dP', opts)
 
 -- Visual Block --
 -- Move text up and down
-keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
+keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
 -- nvim-tree
 keymap("n", "<C-n>", ":NvimTreeToggle<CR>", opts)
+
+-- telescope
+keymap("n", "<C-p>", ":Telescope find_files<CR>", opts)
+keymap("n", "<leader>r", ":Telescope live_grep<CR>", opts)
