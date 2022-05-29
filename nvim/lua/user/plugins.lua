@@ -82,5 +82,8 @@ return packer.startup(function()
     tag = "v2.*",
     requires = 'kyazdani42/nvim-web-devicons'}
 
+  -- pairs
+  use "windwp/nvim-autopairs"
+
 
 end)
