@@ -4,7 +4,16 @@ if not status_ok then
 end
 
 local lspconfig = require("lspconfig")
-local servers = { "jsonls", "sumneko_lua", "pyright", "tsserver", 'tailwindcss' }
+local servers = {
+  "jsonls",
+  "sumneko_lua",
+  "pyright",
+  "tsserver",
+  "tailwindcss",
+  "cssls",
+  "emmet_ls",
+  "rome"
+}
 
 lsp_installer.setup {
 	ensure_installed = servers
