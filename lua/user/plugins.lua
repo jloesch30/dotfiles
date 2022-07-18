@@ -25,8 +25,13 @@ packer.init {
 local use = require('packer').use
 return packer.startup(function()
   use "nvim-lua/plenary.nvim"
+  use "shaunsingh/solarized.nvim"
+  use "tpope/vim-rails"
+  use "lukas-reineke/indent-blankline.nvim"
   use "kyazdani42/nvim-tree.lua"
+  use "tpope/vim-commentary"
   use "kyazdani42/nvim-web-devicons"
+  use "jose-elias-alvarez/nvim-lsp-ts-utils"
   use "antoinemadec/FixCursorHold.nvim"
   use { "wbthomason/packer.nvim" }
   use { "ellisonleao/gruvbox.nvim" }
@@ -40,6 +45,8 @@ return packer.startup(function()
     "tamago324/nlsp-settings.nvim",
     "jose-elias-alvarez/null-ls.nvim"
   }
+
+
   -- cmp
   use {
     'hrsh7th/cmp-nvim-lsp',
@@ -61,32 +68,35 @@ return packer.startup(function()
 
   -- treesitter
   use {
-  'nvim-telescope/telescope.nvim',
-  requires = { {'nvim-lua/plenary.nvim'} }
+    'nvim-telescope/telescope.nvim',
+    requires = { { 'nvim-lua/plenary.nvim' } }
   }
 
   -- lualine
   use {
-  'nvim-lualine/lualine.nvim',
-  requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
 
   -- gitsigns
   use {
-  'lewis6991/gitsigns.nvim',
-  -- tag = 'release' -- To use the latest release
+    'lewis6991/gitsigns.nvim',
+    -- tag = 'release' -- To use the latest release
   }
-  
+
   -- bufferline
   use {
-    'akinsho/bufferline.nvim', 
+    'akinsho/bufferline.nvim',
     tag = "v2.*",
-    requires = 'kyazdani42/nvim-web-devicons'}
+    requires = 'kyazdani42/nvim-web-devicons' }
 
   -- pairs
   use "windwp/nvim-autopairs"
 
   -- emmet
   use 'mattn/emmet-vim'
+
+  -- coc for difficult language servers
+  -- use { 'neoclide/coc.nvim', branch = 'release' }
 
 end)
