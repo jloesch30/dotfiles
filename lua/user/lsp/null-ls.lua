@@ -8,13 +8,13 @@ local formatting = null_ls.builtins.formatting
 -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
 local diagnostics = null_ls.builtins.diagnostics
 local code_actions = null_ls.builtins.code_actions
-
+ 
 require("null-ls").setup({
   debug = false,
   sources = {
     formatting.stylua,
-    diagnostics.rubocop,
-    formatting.rubocop,
+    -- diagnostics.rubocop,
+    -- formatting.rubocop,
     code_actions.eslint_d,
     diagnostics.eslint_d,
     formatting.prettier

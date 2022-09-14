@@ -36,6 +36,8 @@ local options = {
   scrolloff = 8, -- is one of my fav
   sidescrolloff = 8,
   guifont = "monospace:h17",
+  foldmethod = "indent",
+  foldlevel = 99
 }
 
 -- set the variables

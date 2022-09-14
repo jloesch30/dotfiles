@@ -25,7 +25,11 @@ packer.init {
 local use = require('packer').use
 return packer.startup(function()
   use "nvim-lua/plenary.nvim"
+  use "norcalli/nvim_utils"
   use "shaunsingh/solarized.nvim"
+  use "vim-test/vim-test"
+  use "tpope/vim-fugitive"
+  use "vim-ruby/vim-ruby"
   use "tpope/vim-rails"
   use "lukas-reineke/indent-blankline.nvim"
   use "kyazdani42/nvim-tree.lua"

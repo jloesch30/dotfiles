@@ -79,6 +79,9 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 keymap("n", "<C-n>", ":NvimTreeToggle<CR>", opts)
 keymap("n", "<C-f>", ":NvimTreeFindFileToggle<CR>", opts)
 
+-- tree-sitter
+keymap("n", "<leader>a", "zR", opts)
+
 -- telescope
 keymap("n", "<C-p>", ":Telescope find_files<CR>", opts)
 keymap("n", "<leader>r", ":Telescope live_grep<CR>", opts)
@@ -99,3 +102,13 @@ keymap("n", "<leader>f", ":Format<CR>", opts)
 keymap("n", "rs", ":Espec<CR>", opts)
 keymap("n", "rc", ":Econtroller<CR>", opts)
 keymap("n", "rm", ":Emodel<CR>", opts)
+
+-- fugitive
+keymap("n", "<leader>gd", ":Gvdiffsplit!<CR>", opts)
+keymap("n", "gdh", ":diffget //2<CR>", opts)
+keymap("n", "gdl", ":diffget //3<CR>", opts)
+
+-- vimtest
+keymap("n", "tn", ":TestNearest<CR>", opts)
+keymap("n", "tf", ":TestFile<CR>", opts)
+keymap("n", "tl", ":TestLast<CR>", opts)
